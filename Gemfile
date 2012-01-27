@@ -7,6 +7,8 @@ gem 'rails', '3.2.1'
 
 gem 'pg'
 gem 'puma'
+gem 'rexpl'
+gem 'noscript', path: '../noscript'
 
 gem 'jquery-rails'
 
