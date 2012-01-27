@@ -1,0 +1,18 @@
+@require('../test_helper')
+
+PostTest = TestCase.clone({
+  setup: ->
+    @post = Ruby.Post.new()
+  end,
+
+  it validates presence of title: ->
+    @assert(!(@post.send('valid?')))
+  end,
+
+  it responds to body: ->
+    @post.send('body=', 'Body')
+    @assert equal('Body', @post.send('body'))
+  end
+})
+
+PostTest.run()

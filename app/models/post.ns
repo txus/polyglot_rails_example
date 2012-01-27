@@ -1,0 +1,9 @@
+Ruby.Post = Ruby.Class.create(Ruby.ActiveRecord.Base, ->
+  @send('table_name=', 'posts')
+
+  @send('validates', 'title', {presence: true})
+
+  @def('upcase_title', ->
+    @send('title').send('upcase')
+  end)
+end)

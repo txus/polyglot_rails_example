@@ -1,0 +1,2 @@
+Ruby.ENV.send('[]=', 'RAILS_ENV', 'test')
+@ruby require relative('../../config/environment')
