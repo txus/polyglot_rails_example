@@ -3,7 +3,7 @@
 Rails for the polyglot kids! Powered by [Rubinius](http://rubini.us).
 
 This Rails app is partially written in the [Noscript programming language](
-http://github.com/txus/noscript). W00t! Check out the `app/models` and
+http://txus.github.com/noscript). W00t! Check out the `app/models` and
 `test/unit` folders.
 
 ## Who's this
